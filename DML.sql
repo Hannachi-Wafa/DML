@@ -24,7 +24,14 @@ INSERT INTO Customer VALUES
 "ASMA",
 77345823
 );
-INSERT INTO Orders VALUES
+INSERT INTO Orders
+(
+Customer_id,
+Product_id,
+Quantity,
+Total_amount
+)
+VALUES
 (
 "C01",
 "P02",
@@ -33,13 +40,6 @@ INSERT INTO Orders VALUES
 );
 
 INSERT INTO Orders
-(
-Customer_id,
-Product_id,
-Order_date,
-Quantity,
-Total_amount
-)
 VALUES
 (
 "C02",
